@@ -13,10 +13,47 @@ SIZE    = $(TC)-size
 OBJCOPY = $(TC)-objcopy
 OBJDUMP = $(TC)-objdump
 
-LINKER_SCRIPT = minirisc.ld
+GCC_TOOLCHAIN_PATH = $(patsubst %/,%,$(dir $(patsubst %/,%,$(dir $(shell which $(CC))))))
+SYSROOT_PATH = $(GCC_TOOLCHAIN_PATH)/riscv32-MINIRISC-elf
 
+
+################################## Mini-RISC ###################################
+CFLAGS += -Iminirisc
+SRC    += minirisc/minirisc.c
+SRC    += minirisc/minirisc_init.S
+
+################################### xprintf ####################################
+CFLAGS += -Ixprintf
+SRC    += xprintf/xprintf.c
+
+################################### FreeRTOS ###################################
+CFLAGS += -IFreeRTOS/include
+CFLAGS += -IFreeRTOS/portable/GCC/Mini-RISC
+SRC    += FreeRTOS/tasks.c
+SRC    += FreeRTOS/timers.c
+SRC    += FreeRTOS/list.c
+SRC    += FreeRTOS/queue.c
+SRC    += FreeRTOS/croutine.c
+SRC    += FreeRTOS/stream_buffer.c
+SRC    += FreeRTOS/event_groups.c
+SRC    += FreeRTOS/portable/MemMang/heap_3_nosuspend.c
+SRC    += FreeRTOS/portable/GCC/Mini-RISC/port.c
+SRC    += FreeRTOS/portable/GCC/Mini-RISC/portASM.S
+
+################################ Support & glue ################################
+CFLAGS += -Isupport
+SRC    += support/syscalls.c
+SRC    += support/freertos_support.c
+SRC    += support/uart.c
+
+################################################################################
+
+LINKER_SCRIPT = minirisc/minirisc.ld
+
+CFLAGS    += -I.
+COMPILE_COMMANDS_CFLAGS := $(CFLAGS)
 CFLAGS  += -W -Wall
-CFLAGS  += -O0 -ggdb
+CFLAGS  += -Og -ggdb
 
 CFLAGS  += -march=rv32im_zicsr -mabi=ilp32
 
@@ -35,7 +72,6 @@ DEPS    = $(addprefix $(BUILD)/, $(SRCC:.c=.d))
 DEPS   += $(addprefix $(BUILD)/, $(SRCS:.S=.d))
 DEPS   += $(addprefix $(BUILD)/, $(SRCCPP:.cc=.d))
 
-EMULATOR = $(abspath $(makefile_dir)/../../emulator/build/mini-risc)
 
 .PHONY: all clean size bin hex lss exec
 
@@ -74,9 +110,6 @@ size: $(BUILD)/$(TARGET).elf
 $(BUILD)/$(TARGET).lss: $(BUILD)/$(TARGET).elf
 	@$(OBJDUMP) -h -d $< > $@
 
-#	$(OBJDUMP) -h -S -d $< > $@ # -S for sources, -d to disassemble all what have instruction
-#	$(OBJDUMP) -h -S -D -z $< > $@
-
 bin: $(BUILD)/$(TARGET).bin
 	@echo "done"
 
@@ -87,13 +120,18 @@ lss: $(BUILD)/$(TARGET).lss
 	vim $<
 
 exec: $(BUILD)/$(TARGET).bin $(BUILD)/$(TARGET).lss
-	harvey -e $<
+	harvey --insn=minirisc $<
 
 gdb1: $(BUILD)/$(TARGET).elf
-	harvey --insn=minirisc --no-exceptions --gdb
+	harvey --insn=minirisc --gdb
 
 gdb2: $(BUILD)/$(TARGET).elf
 	riscv32-MINIRISC-elf-gdb --tui $<
 
+compile_commands.json:
+	@echo "[\n "$(foreach file, $(SRCC),"{\n  \"arguments\": [\n   \"clang\",\n   \"--sysroot=$(SYSROOT_PATH)\",\n   \"--gcc-toolchain=$(GCC_TOOLCHAIN_PATH)\",\n   \"--target=riscv32-unknown-elf\",\n   \"-march=rv32im\",\n   \"-mabi=ilp32\",\n   $(foreach inc,$(COMPILE_COMMANDS_CFLAGS),\"$(inc)\",\n  ) \"-c\",\n   \"-o\",\n   \"$(abspath $(addprefix $(BUILD)/, $(file:.c=.o)))\",\n   \"$(abspath $(file))\"\n  ],\n  \"directory\": \"$(abspath $(PWD))\",\n  \"file\": \"$(abspath $(file))\",\n  \"output\": \"$(abspath $(addprefix $(BUILD)/, $(file:.c=.o)))\"\n },\n")"]" > $@
+
+
 clean:
 	@rm -rf $(BUILD)
+

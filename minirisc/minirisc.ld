@@ -68,7 +68,6 @@ SECTIONS
   {
   	. = ALIGN(4);
   	KEEP(*(.minirisc_init))
-  	KEEP(*(.minirisc_init.irq_handlers))
   	. = ALIGN(4);
   }
 
@@ -77,6 +76,12 @@ SECTIONS
     KEEP (*(SORT_NONE(.init)))
   }
   .plt            : { *(.plt) *(.iplt) }
+  .minirisc_irq_handlers :
+  {
+  	. = ALIGN(4);
+  	KEEP(*(.minirisc_irq_handlers))
+  	. = ALIGN(4);
+  }
   .text           :
   {
     *(.text.unlikely .text.*_unlikely .text.unlikely.*)
@@ -223,7 +228,8 @@ SECTIONS
     __global_pointer$ = MIN(__SDATA_BEGIN__ + 0x800,
 		            MAX(__DATA_BEGIN__ + 0x800, __BSS_END__ - 0x800));
   _end = .; PROVIDE (end = .);
-  . = DATA_SEGMENT_END (.);
+/* https://github.com/riscv-collab/riscv-gnu-toolchain/issues/815 */
+/*  . = DATA_SEGMENT_END (.); */
   /* Stabs debugging sections.  */
   .stab          0 : { *(.stab) }
   .stabstr       0 : { *(.stabstr) }
@@ -273,5 +279,6 @@ SECTIONS
   .gnu.attributes 0 : { KEEP (*(.gnu.attributes)) }
   /DISCARD/ : { *(.note.GNU-stack) *(.gnu_debuglink) *(.gnu.lto_*) }
 }
+
 
 
