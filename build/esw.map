@@ -1184,7 +1184,7 @@ LOAD build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
 
-.rodata         0x0000000080026a10    0x4d8fc
+.rodata         0x0000000080026a10    0x4d8ec
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.str1.4
                 0x0000000080026a10      0x289 build/minirisc/minirisc.o
@@ -1212,124 +1212,124 @@ LOAD build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
  .rodata        0x0000000080026f14     0x5d64 build/Cactus1.o
                 0x0000000080026f14                Cactus1
  .rodata.str1.4
-                0x000000008002cc78       0x77 build/dinoGame.o
- *fill*         0x000000008002ccef        0x1 
- .rodata        0x000000008002ccf0     0x8764 build/dinoSpriteCrouched1.o
-                0x000000008002ccf0                dinoSpriteCrouched1
- .rodata        0x0000000080035454     0x8764 build/dinoSpriteCrouched2.o
-                0x0000000080035454                dinoSpriteCrouched2
- .rodata        0x000000008003dbb8     0x930c build/dinoSpriteDead.o
-                0x000000008003dbb8                dinoSpriteDead
- .rodata        0x0000000080046ec4     0x930c build/dinoSpriteMoving1.o
-                0x0000000080046ec4                dinoSpriteMoving1
- .rodata        0x00000000800501d0     0x930c build/dinoSpriteMoving2.o
-                0x00000000800501d0                dinoSpriteMoving2
- .rodata        0x00000000800594dc     0x930c build/dinoSpriteStatic.o
-                0x00000000800594dc                dinoSpriteStatic
- .rodata        0x00000000800627e8     0x1db0 build/font.o
-                0x0000000080062dd8                terminusbold32x16
- .rodata        0x0000000080064598     0x721c build/Ptero1.o
-                0x0000000080064598                Ptero1
- .rodata        0x000000008006b7b4     0x721c build/Ptero2.o
-                0x000000008006b7b4                Ptero2
- .rodata        0x00000000800729d0       0x40 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(divdf3.o)
- .rodata        0x0000000080072a10      0x100 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clz.o)
-                0x0000000080072a10                __clz_tab
+                0x000000008002cc78       0x6b build/dinoGame.o
+ *fill*         0x000000008002cce3        0x1 
+ .rodata        0x000000008002cce4     0x8764 build/dinoSpriteCrouched1.o
+                0x000000008002cce4                dinoSpriteCrouched1
+ .rodata        0x0000000080035448     0x8764 build/dinoSpriteCrouched2.o
+                0x0000000080035448                dinoSpriteCrouched2
+ .rodata        0x000000008003dbac     0x930c build/dinoSpriteDead.o
+                0x000000008003dbac                dinoSpriteDead
+ .rodata        0x0000000080046eb8     0x930c build/dinoSpriteMoving1.o
+                0x0000000080046eb8                dinoSpriteMoving1
+ .rodata        0x00000000800501c4     0x930c build/dinoSpriteMoving2.o
+                0x00000000800501c4                dinoSpriteMoving2
+ .rodata        0x00000000800594d0     0x930c build/dinoSpriteStatic.o
+                0x00000000800594d0                dinoSpriteStatic
+ *fill*         0x00000000800627dc        0x4 
+ .rodata        0x00000000800627e0     0x1db0 build/font.o
+                0x0000000080062dd0                terminusbold32x16
+ .rodata        0x0000000080064590     0x721c build/Ptero1.o
+                0x0000000080064590                Ptero1
+ .rodata        0x000000008006b7ac     0x721c build/Ptero2.o
+                0x000000008006b7ac                Ptero2
+ .rodata        0x00000000800729c8       0x40 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(divdf3.o)
+ .rodata        0x0000000080072a08      0x100 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clz.o)
+                0x0000000080072a08                __clz_tab
  .rodata.get_arg
-                0x0000000080072b10      0x2c4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+                0x0000000080072b08      0x2c4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
  .rodata._svfprintf_r.str1.4
-                0x0000000080072dd4       0x3e /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+                0x0000000080072dcc       0x3e /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
                                          0x42 (size before relaxing)
- *fill*         0x0000000080072e12        0x2 
+ *fill*         0x0000000080072e0a        0x2 
  .rodata._svfprintf_r
-                0x0000000080072e14      0x204 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+                0x0000000080072e0c      0x204 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
  .rodata.zeroes.0
-                0x0000000080073018       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+                0x0000000080073010       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
  .rodata.blanks.1
-                0x0000000080073028       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
- *fill*         0x0000000080073038        0x8 
- .rodata.cst16  0x0000000080073040       0x30 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+                0x0000000080073020       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+ .rodata.cst16  0x0000000080073030       0x30 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
  .rodata.currentlocale.str1.4
-                0x0000000080073070        0x2 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
- *fill*         0x0000000080073072        0x2 
+                0x0000000080073060        0x2 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+ *fill*         0x0000000080073062        0x2 
  .rodata.__loadlocale.str1.4
-                0x0000000080073074       0xd6 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
- *fill*         0x000000008007314a        0x2 
+                0x0000000080073064       0xd6 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+ *fill*         0x000000008007313a        0x2 
  .rodata.__loadlocale
-                0x000000008007314c       0xd4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x000000008007313c       0xd4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
  .rodata.__get_locale_env.str1.4
-                0x0000000080073220        0xd /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
- *fill*         0x000000008007322d        0x3 
+                0x0000000080073210        0xd /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+ *fill*         0x000000008007321d        0x3 
  .rodata.str1.4
-                0x0000000080073230       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x0000000080073220       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
                                          0x4c (size before relaxing)
  .rodata.__C_locale
-                0x0000000080073278      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
-                0x0000000080073278                __C_locale
+                0x0000000080073268      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x0000000080073268                __C_locale
  .rodata.categories
-                0x00000000800733e4       0x1c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
- .rodata.cst16  0x0000000080073400       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libm_a-frexpl.o)
- .rodata.cst16  0x0000000080073410       0x20 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
- .rodata        0x0000000080073430       0x14 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
+                0x00000000800733d4       0x1c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+ .rodata.cst16  0x00000000800733f0       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libm_a-frexpl.o)
+ .rodata.cst16  0x0000000080073400       0x20 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
+ .rodata        0x0000000080073420       0x14 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
  .rodata.__gdtoa.str1.4
-                0x0000000080073444        0x9 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
+                0x0000000080073434        0x9 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
                                          0x12 (size before relaxing)
- *fill*         0x000000008007344d        0x3 
+ *fill*         0x000000008007343d        0x3 
  .rodata.__jis_mbtowc
-                0x0000000080073450       0xd8 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
+                0x0000000080073440       0xd8 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
  .rodata.JIS_action_table
-                0x0000000080073528       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
+                0x0000000080073518       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
  .rodata.JIS_state_table
-                0x0000000080073570       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
+                0x0000000080073560       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
  .rodata.__multadd.str1.4
-                0x00000000800735b8       0x74 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
- .rodata.p05.0  0x000000008007362c        0xc /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+                0x00000000800735a8       0x74 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+ .rodata.p05.0  0x000000008007361c        0xc /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
  .rodata.__mprec_tinytens
-                0x0000000080073638       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
-                0x0000000080073638                __mprec_tinytens
+                0x0000000080073628       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+                0x0000000080073628                __mprec_tinytens
  .rodata.__mprec_bigtens
-                0x0000000080073660       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
-                0x0000000080073660                __mprec_bigtens
+                0x0000000080073650       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+                0x0000000080073650                __mprec_bigtens
  .rodata.__mprec_tens
-                0x0000000080073688       0xc8 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
-                0x0000000080073688                __mprec_tens
+                0x0000000080073678       0xc8 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+                0x0000000080073678                __mprec_tens
  .rodata._ctype_
-                0x0000000080073750      0x101 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-ctype_.o)
-                0x0000000080073750                _ctype_
- *fill*         0x0000000080073851        0x3 
+                0x0000000080073740      0x101 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-ctype_.o)
+                0x0000000080073740                _ctype_
+ *fill*         0x0000000080073841        0x3 
  .rodata.get_arg
-                0x0000000080073854      0x2c4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+                0x0000000080073844      0x2c4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
  .rodata._svfiprintf_r.str1.4
-                0x0000000080073b18       0x2f /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+                0x0000000080073b08       0x2f /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
  .rodata._svfiprintf_r
-                0x0000000080073b18      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+                0x0000000080073b08      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
  .rodata.zeroes.0
+                0x0000000080073c74       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+ .rodata.blanks.1
                 0x0000000080073c84       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
- .rodata.blanks.1
-                0x0000000080073c94       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
  .rodata.__action_table
-                0x0000000080073ca4       0x6c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
-                0x0000000080073ca4                __action_table
+                0x0000000080073c94       0x6c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+                0x0000000080073c94                __action_table
  .rodata.__state_table
-                0x0000000080073d10       0x6c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
-                0x0000000080073d10                __state_table
+                0x0000000080073d00       0x6c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+                0x0000000080073d00                __state_table
  .rodata.__chclass
-                0x0000000080073d7c      0x100 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
-                0x0000000080073d7c                __chclass
+                0x0000000080073d6c      0x100 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+                0x0000000080073d6c                __chclass
  .rodata.__assert_func.str1.4
-                0x0000000080073e7c       0x3f /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-assert.o)
+                0x0000000080073e6c       0x3f /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-assert.o)
                                          0x43 (size before relaxing)
- *fill*         0x0000000080073ebb        0x1 
+ *fill*         0x0000000080073eab        0x1 
  .rodata.get_arg
-                0x0000000080073ebc      0x2c4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
+                0x0000000080073eac      0x2c4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
  .rodata._vfiprintf_r.str1.4
-                0x0000000080074180       0x2f /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
+                0x0000000080074170       0x2f /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
  .rodata._vfiprintf_r
-                0x0000000080074180      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
+                0x0000000080074170      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
  .rodata.zeroes.0
-                0x00000000800742ec       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
+                0x00000000800742dc       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
  .rodata.blanks.1
-                0x00000000800742fc       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
+                0x00000000800742ec       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
 
 .rodata1
  *(.rodata1)
@@ -1360,15 +1360,15 @@ LOAD build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
 
 .exception_ranges
  *(.exception_ranges*)
-                0x000000008007530c                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+                0x00000000800752fc                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
 
-.eh_frame       0x000000008007430c       0x40
+.eh_frame       0x00000000800742fc       0x40
  *(.eh_frame)
- .eh_frame      0x000000008007430c        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
- .eh_frame      0x000000008007430c       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_udivdi3.o)
- .eh_frame      0x0000000080074334       0x14 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_umoddi3.o)
+ .eh_frame      0x00000000800742fc        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
+ .eh_frame      0x00000000800742fc       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000080074324       0x14 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_umoddi3.o)
                                          0x28 (size before relaxing)
- .eh_frame      0x0000000080074348        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtend.o
+ .eh_frame      0x0000000080074338        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtend.o
  *(.eh_frame.*)
 
 .sframe
@@ -1384,7 +1384,7 @@ LOAD build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
 .exception_ranges
  *(.exception_ranges*)
 
-.tdata          0x000000008007530c        0x0
+.tdata          0x00000000800752fc        0x0
                 [!provide]                        PROVIDE (__tdata_start = .)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
 
@@ -1392,28 +1392,28 @@ LOAD build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
 
-.preinit_array  0x000000008007530c        0x0
-                0x000000008007530c                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x00000000800752fc        0x0
+                0x00000000800752fc                PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
-                0x000000008007530c                PROVIDE (__preinit_array_end = .)
+                0x00000000800752fc                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x000000008007434c        0xc
-                0x000000008007434c                PROVIDE (__init_array_start = .)
+.init_array     0x000000008007433c        0xc
+                0x000000008007433c                PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  .init_array.00000
-                0x000000008007434c        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
+                0x000000008007433c        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
  .init_array.00101
-                0x0000000080074350        0x4 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
+                0x0000000080074340        0x4 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
- .init_array    0x0000000080074354        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
-                0x0000000080074358                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000080074344        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
+                0x0000000080074348                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000080074358        0x4
-                0x0000000080074358                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000080074348        0x4
+                0x0000000080074348                PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
- .fini_array    0x0000000080074358        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
-                0x000000008007435c                PROVIDE (__fini_array_end = .)
+ .fini_array    0x0000000080074348        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
+                0x000000008007434c                PROVIDE (__fini_array_end = .)
 
 .ctors
  *crtbegin.o(.ctors)
@@ -1438,157 +1438,157 @@ LOAD build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
 
 .dynamic
  *(.dynamic)
-                0x000000008007435c                . = DATA_SEGMENT_RELRO_END (., 0x0)
+                0x000000008007434c                . = DATA_SEGMENT_RELRO_END (., 0x0)
 
-.data           0x0000000080074360      0x6c4
-                0x0000000080074360                __DATA_BEGIN__ = .
+.data           0x0000000080074350      0x6c4
+                0x0000000080074350                __DATA_BEGIN__ = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/crt0.o
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
- .data          0x0000000080074360        0x0 build/minirisc/minirisc.o
- .data          0x0000000080074360        0x0 build/xprintf/xprintf.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/tasks.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/timers.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/list.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/queue.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/croutine.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/stream_buffer.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/event_groups.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/port.o
- .data          0x0000000080074360        0x0 build/support/syscalls.o
- .data          0x0000000080074360        0x0 build/support/freertos_support.o
- .data          0x0000000080074360        0x0 build/support/uart.o
- .data          0x0000000080074360        0x0 build/Cactus1.o
- .data          0x0000000080074360        0x0 build/dinoGame.o
- .data          0x0000000080074360        0x0 build/dinoSpriteCrouched1.o
- .data          0x0000000080074360        0x0 build/dinoSpriteCrouched2.o
- .data          0x0000000080074360        0x0 build/dinoSpriteDead.o
- .data          0x0000000080074360        0x0 build/dinoSpriteMoving1.o
- .data          0x0000000080074360        0x0 build/dinoSpriteMoving2.o
- .data          0x0000000080074360        0x0 build/dinoSpriteStatic.o
- .data          0x0000000080074360        0x0 build/font.o
- .data          0x0000000080074360        0x0 build/Ptero1.o
- .data          0x0000000080074360        0x0 build/Ptero2.o
- .data          0x0000000080074360        0x0 build/sprite.o
- .data          0x0000000080074360        0x0 build/minirisc/minirisc_init.o
- .data          0x0000000080074360        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clzsi2.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_udivdi3.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_umoddi3.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(adddf3.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(divdf3.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqdf2.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(gedf2.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(ledf2.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(muldf3.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subdf3.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unorddf2.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixdfsi.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsidf.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clz.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-atexit.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-exit.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-malloc.o)
- .data          0x0000000080074360        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/crt0.o
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
+ .data          0x0000000080074350        0x0 build/minirisc/minirisc.o
+ .data          0x0000000080074350        0x0 build/xprintf/xprintf.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/tasks.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/timers.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/list.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/queue.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/croutine.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/stream_buffer.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/event_groups.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/port.o
+ .data          0x0000000080074350        0x0 build/support/syscalls.o
+ .data          0x0000000080074350        0x0 build/support/freertos_support.o
+ .data          0x0000000080074350        0x0 build/support/uart.o
+ .data          0x0000000080074350        0x0 build/Cactus1.o
+ .data          0x0000000080074350        0x0 build/dinoGame.o
+ .data          0x0000000080074350        0x0 build/dinoSpriteCrouched1.o
+ .data          0x0000000080074350        0x0 build/dinoSpriteCrouched2.o
+ .data          0x0000000080074350        0x0 build/dinoSpriteDead.o
+ .data          0x0000000080074350        0x0 build/dinoSpriteMoving1.o
+ .data          0x0000000080074350        0x0 build/dinoSpriteMoving2.o
+ .data          0x0000000080074350        0x0 build/dinoSpriteStatic.o
+ .data          0x0000000080074350        0x0 build/font.o
+ .data          0x0000000080074350        0x0 build/Ptero1.o
+ .data          0x0000000080074350        0x0 build/Ptero2.o
+ .data          0x0000000080074350        0x0 build/sprite.o
+ .data          0x0000000080074350        0x0 build/minirisc/minirisc_init.o
+ .data          0x0000000080074350        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clzsi2.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_umoddi3.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(adddf3.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(divdf3.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqdf2.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(gedf2.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(ledf2.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(muldf3.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subdf3.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unorddf2.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixdfsi.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsidf.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clz.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-atexit.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-exit.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-malloc.o)
+ .data          0x0000000080074350        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
  .data.__malloc_av_
-                0x0000000080074360      0x408 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
-                0x0000000080074360                __malloc_av_
- .data          0x0000000080074768        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
- .data.__sglue  0x0000000080074768        0xc /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
-                0x0000000080074768                __sglue
- .data          0x0000000080074774        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fwalk.o)
- .data          0x0000000080074774        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sprintf.o)
- .data          0x0000000080074774        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-stdio.o)
- .data          0x0000000080074774        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-time.o)
- .data          0x0000000080074774        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-closer.o)
- .data          0x0000000080074774        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reent.o)
- .data          0x0000000080074774        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
- *fill*         0x0000000080074774        0x4 
+                0x0000000080074350      0x408 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+                0x0000000080074350                __malloc_av_
+ .data          0x0000000080074758        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
+ .data.__sglue  0x0000000080074758        0xc /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
+                0x0000000080074758                __sglue
+ .data          0x0000000080074764        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fwalk.o)
+ .data          0x0000000080074764        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sprintf.o)
+ .data          0x0000000080074764        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-stdio.o)
+ .data          0x0000000080074764        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-time.o)
+ .data          0x0000000080074764        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-closer.o)
+ .data          0x0000000080074764        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reent.o)
+ .data          0x0000000080074764        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
+ *fill*         0x0000000080074764        0x4 
  .data._impure_data
-                0x0000000080074778      0x120 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
-                0x0000000080074778                _impure_data
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gettimeofdayr.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-lseekr.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-readr.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sbrkr.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-writer.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-errno.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-init.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fini.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sysgetpid.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memset.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memcpy.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlen.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcpy.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__atexit.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-freer.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fclose.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fflush.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memchr.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncpy.o)
- .data          0x0000000080074898        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x0000000080074768      0x120 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
+                0x0000000080074768                _impure_data
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gettimeofdayr.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-lseekr.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-readr.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sbrkr.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-writer.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-errno.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-init.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fini.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sysgetpid.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memset.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memcpy.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlen.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcpy.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__atexit.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-freer.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fclose.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fflush.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memchr.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncpy.o)
+ .data          0x0000000080074888        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
  .data.__global_locale
-                0x0000000080074898      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
-                0x0000000080074898                __global_locale
+                0x0000000080074888      0x16c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x0000000080074888                __global_locale
  .data.__default_locale
-                0x0000000080074a04       0x20 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
-                0x0000000080074a04                __default_locale
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-localeconv.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signalr.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcmp.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libm_a-frexpl.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-getenv_r.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-dmisc.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gmisc.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strtol.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wctomb_r.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcrtomb.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsrtombs.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-ctype_.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcasecmp.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcat.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strchr.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlcpy.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncasecmp.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncmp.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memmove-stub.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-assert.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-callocr.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-envlock.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reallocr.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsnrtombs.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fiprintf.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fvwrite.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wsetup.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fputwc.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-abort.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-makebuf.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wbuf.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signal.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fstatr.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-isattyr.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_getpid.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_kill.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqtf2.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(getf2.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(letf2.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(multf3.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subtf3.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unordtf2.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixtfsi.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsitf.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(extenddftf2.o)
- .data          0x0000000080074a24        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtend.o
+                0x00000000800749f4       0x20 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x00000000800749f4                __default_locale
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-localeconv.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signalr.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcmp.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libm_a-frexpl.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-getenv_r.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-dmisc.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gmisc.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strtol.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wctomb_r.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcrtomb.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsrtombs.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-ctype_.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcasecmp.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcat.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strchr.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlcpy.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncasecmp.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncmp.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memmove-stub.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-assert.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-callocr.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-envlock.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reallocr.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsnrtombs.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fiprintf.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fvwrite.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wsetup.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fputwc.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-abort.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-makebuf.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wbuf.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signal.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fstatr.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-isattyr.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_getpid.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_kill.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqtf2.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(getf2.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(letf2.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(multf3.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subtf3.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unordtf2.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixtfsi.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsitf.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(extenddftf2.o)
+ .data          0x0000000080074a14        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtend.o
 
 .data1
  *(.data1)
@@ -1599,253 +1599,253 @@ LOAD build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
  *(.got)
  *(.igot)
 
-.sdata          0x0000000080074a28       0xd0
-                0x0000000080074a28                __SDATA_BEGIN__ = .
+.sdata          0x0000000080074a18       0xd0
+                0x0000000080074a18                __SDATA_BEGIN__ = .
  *(.srodata.cst16)
  *(.srodata.cst8)
- .srodata.cst8  0x0000000080074a28       0x30 build/xprintf/xprintf.o
- .srodata.cst8  0x0000000080074a58       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
+ .srodata.cst8  0x0000000080074a18       0x30 build/xprintf/xprintf.o
+ .srodata.cst8  0x0000000080074a48       0x48 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
                                          0x60 (size before relaxing)
- .srodata.cst8  0x0000000080074aa0       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+ .srodata.cst8  0x0000000080074a90       0x10 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
  *(.srodata.cst4)
  *(.srodata.cst2)
  *(.srodata .srodata.*)
- .srodata       0x0000000080074aa0        0x4 build/FreeRTOS/portable/GCC/Mini-RISC/port.o
-                0x0000000080074aa0                xISRStackTop
+ .srodata       0x0000000080074a90        0x4 build/FreeRTOS/portable/GCC/Mini-RISC/port.o
+                0x0000000080074a90                xISRStackTop
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x0000000080074aa4        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
-                0x0000000080074aa4                __dso_handle
- .sdata         0x0000000080074aa8        0x4 build/FreeRTOS/tasks.o
-                0x0000000080074aa8                uxTopUsedPriority
- .sdata         0x0000000080074aac        0xc build/FreeRTOS/portable/GCC/Mini-RISC/port.o
-                0x0000000080074aac                xTaskReturnAddress
-                0x0000000080074ab0                pxCriticalNesting
-                0x0000000080074ab4                xCriticalNesting
- .sdata         0x0000000080074ab8       0x30 build/dinoGame.o
-                0x0000000080074ab8                PteroHeight
-                0x0000000080074abc                PteroLength
-                0x0000000080074ac0                cactusHeight
-                0x0000000080074ac4                cactusLength
-                0x0000000080074ac8                dinoHeight
-                0x0000000080074acc                dinoLength
-                0x0000000080074ad0                color
-                0x0000000080074ad4                spriteUpdatePtero
-                0x0000000080074ad8                spriteUpdate
+ .sdata         0x0000000080074a94        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
+                0x0000000080074a94                __dso_handle
+ .sdata         0x0000000080074a98        0x4 build/FreeRTOS/tasks.o
+                0x0000000080074a98                uxTopUsedPriority
+ .sdata         0x0000000080074a9c        0xc build/FreeRTOS/portable/GCC/Mini-RISC/port.o
+                0x0000000080074a9c                xTaskReturnAddress
+                0x0000000080074aa0                pxCriticalNesting
+                0x0000000080074aa4                xCriticalNesting
+ .sdata         0x0000000080074aa8       0x30 build/dinoGame.o
+                0x0000000080074aa8                PteroHeight
+                0x0000000080074aac                PteroLength
+                0x0000000080074ab0                cactusHeight
+                0x0000000080074ab4                cactusLength
+                0x0000000080074ab8                dinoHeight
+                0x0000000080074abc                dinoLength
+                0x0000000080074ac0                color
+                0x0000000080074ac4                spriteUpdatePtero
+                0x0000000080074ac8                spriteUpdate
  .sdata.__malloc_sbrk_base
-                0x0000000080074ae8        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
-                0x0000000080074ae8                __malloc_sbrk_base
+                0x0000000080074ad8        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+                0x0000000080074ad8                __malloc_sbrk_base
  .sdata.__malloc_trim_threshold
-                0x0000000080074aec        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
-                0x0000000080074aec                __malloc_trim_threshold
+                0x0000000080074adc        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+                0x0000000080074adc                __malloc_trim_threshold
  .sdata._impure_ptr
-                0x0000000080074af0        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
-                0x0000000080074af0                _impure_ptr
+                0x0000000080074ae0        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
+                0x0000000080074ae0                _impure_ptr
  .sdata.environ
-                0x0000000080074af4        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
-                0x0000000080074af4                environ
-                0x0000000080074af8                _edata = .
+                0x0000000080074ae4        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
+                0x0000000080074ae4                environ
+                0x0000000080074ae8                _edata = .
                 [!provide]                        PROVIDE (edata = .)
-                0x0000000080074af8                . = .
-                0x0000000080074af8                __bss_start = .
+                0x0000000080074ae8                . = .
+                0x0000000080074ae8                __bss_start = .
 
-.sbss           0x0000000080074af8       0xb4
+.sbss           0x0000000080074ae8       0xb4
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x0000000080074af8        0x4 build/xprintf/xprintf.o
- *fill*         0x0000000080074afc        0x4 
- .sbss          0x0000000080074b00       0x4c build/FreeRTOS/tasks.o
-                0x0000000080074b48                pxCurrentTCB
- .sbss          0x0000000080074b4c       0x14 build/FreeRTOS/timers.o
- .sbss          0x0000000080074b60        0x4 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
- .sbss          0x0000000080074b64        0x4 build/support/syscalls.o
- .sbss          0x0000000080074b68        0xc build/support/uart.o
- .sbss          0x0000000080074b74       0x18 build/dinoGame.o
-                0x0000000080074b74                dinoY
-                0x0000000080074b78                dinoX
+ .sbss          0x0000000080074ae8        0x4 build/xprintf/xprintf.o
+ *fill*         0x0000000080074aec        0x4 
+ .sbss          0x0000000080074af0       0x4c build/FreeRTOS/tasks.o
+                0x0000000080074b38                pxCurrentTCB
+ .sbss          0x0000000080074b3c       0x14 build/FreeRTOS/timers.o
+ .sbss          0x0000000080074b50        0x4 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
+ .sbss          0x0000000080074b54        0x4 build/support/syscalls.o
+ .sbss          0x0000000080074b58        0xc build/support/uart.o
+ .sbss          0x0000000080074b64       0x18 build/dinoGame.o
+                0x0000000080074b64                dinoY
+                0x0000000080074b68                dinoX
  .sbss.__malloc_max_total_mem
-                0x0000000080074b8c        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
-                0x0000000080074b8c                __malloc_max_total_mem
+                0x0000000080074b7c        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+                0x0000000080074b7c                __malloc_max_total_mem
  .sbss.__malloc_max_sbrked_mem
-                0x0000000080074b90        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
-                0x0000000080074b90                __malloc_max_sbrked_mem
+                0x0000000080074b80        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+                0x0000000080074b80                __malloc_max_sbrked_mem
  .sbss.__malloc_top_pad
-                0x0000000080074b94        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
-                0x0000000080074b94                __malloc_top_pad
+                0x0000000080074b84        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+                0x0000000080074b84                __malloc_top_pad
  .sbss.__stdio_exit_handler
-                0x0000000080074b98        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
-                0x0000000080074b98                __stdio_exit_handler
- .sbss.errno    0x0000000080074b9c        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reent.o)
-                0x0000000080074b9c                errno
+                0x0000000080074b88        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
+                0x0000000080074b88                __stdio_exit_handler
+ .sbss.errno    0x0000000080074b8c        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reent.o)
+                0x0000000080074b8c                errno
  .sbss.__atexit
-                0x0000000080074ba0        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
-                0x0000000080074ba0                __atexit
+                0x0000000080074b90        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
+                0x0000000080074b90                __atexit
  .sbss._PathLocale
-                0x0000000080074ba4        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
-                0x0000000080074ba4                _PathLocale
+                0x0000000080074b94        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x0000000080074b94                _PathLocale
  .sbss.initial_env
-                0x0000000080074ba8        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
+                0x0000000080074b98        0x4 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
  *(.scommon)
 
-.bss            0x0000000080074bb0   0x1691e8
+.bss            0x0000000080074ba0   0x1691e8
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000080074bb0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/crt0.o
- .bss           0x0000000080074bb0       0x1c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
- .bss           0x0000000080074bcc        0x0 build/minirisc/minirisc.o
- .bss           0x0000000080074bcc        0x0 build/xprintf/xprintf.o
- .bss           0x0000000080074bcc      0x2e4 build/FreeRTOS/tasks.o
- .bss           0x0000000080074eb0      0x13c build/FreeRTOS/timers.o
- .bss           0x0000000080074fec        0x0 build/FreeRTOS/list.o
- .bss           0x0000000080074fec       0x40 build/FreeRTOS/queue.o
-                0x0000000080074fec                xQueueRegistry
- .bss           0x000000008007502c        0x0 build/FreeRTOS/croutine.o
- .bss           0x000000008007502c        0x0 build/FreeRTOS/stream_buffer.o
- .bss           0x000000008007502c        0x0 build/FreeRTOS/event_groups.o
- .bss           0x000000008007502c       0x54 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
- .bss           0x0000000080075080        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/port.o
- .bss           0x0000000080075080        0x0 build/support/syscalls.o
- .bss           0x0000000080075080      0x720 build/support/freertos_support.o
- .bss           0x00000000800757a0        0x0 build/support/uart.o
- .bss           0x00000000800757a0        0x0 build/Cactus1.o
- .bss           0x00000000800757a0   0x168060 build/dinoGame.o
-                0x00000000800757a0                cactuses
-                0x00000000800757dc                pteros
- .bss           0x00000000801dd800        0x0 build/dinoSpriteCrouched1.o
- .bss           0x00000000801dd800        0x0 build/dinoSpriteCrouched2.o
- .bss           0x00000000801dd800        0x0 build/dinoSpriteDead.o
- .bss           0x00000000801dd800        0x0 build/dinoSpriteMoving1.o
- .bss           0x00000000801dd800        0x0 build/dinoSpriteMoving2.o
- .bss           0x00000000801dd800        0x0 build/dinoSpriteStatic.o
- .bss           0x00000000801dd800        0x0 build/font.o
- .bss           0x00000000801dd800        0x0 build/Ptero1.o
- .bss           0x00000000801dd800        0x0 build/Ptero2.o
- .bss           0x00000000801dd800        0x0 build/sprite.o
- .bss           0x00000000801dd800        0x0 build/minirisc/minirisc_init.o
- .bss           0x00000000801dd800        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clzsi2.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_udivdi3.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_umoddi3.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(adddf3.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(divdf3.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqdf2.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(gedf2.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(ledf2.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(muldf3.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subdf3.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unorddf2.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixdfsi.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsidf.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clz.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-atexit.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-exit.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-malloc.o)
- .bss           0x00000000801dd800        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+ .bss           0x0000000080074ba0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/crt0.o
+ .bss           0x0000000080074ba0       0x1c /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtbegin.o
+ .bss           0x0000000080074bbc        0x0 build/minirisc/minirisc.o
+ .bss           0x0000000080074bbc        0x0 build/xprintf/xprintf.o
+ .bss           0x0000000080074bbc      0x2e4 build/FreeRTOS/tasks.o
+ .bss           0x0000000080074ea0      0x13c build/FreeRTOS/timers.o
+ .bss           0x0000000080074fdc        0x0 build/FreeRTOS/list.o
+ .bss           0x0000000080074fdc       0x40 build/FreeRTOS/queue.o
+                0x0000000080074fdc                xQueueRegistry
+ .bss           0x000000008007501c        0x0 build/FreeRTOS/croutine.o
+ .bss           0x000000008007501c        0x0 build/FreeRTOS/stream_buffer.o
+ .bss           0x000000008007501c        0x0 build/FreeRTOS/event_groups.o
+ .bss           0x000000008007501c       0x54 build/FreeRTOS/portable/MemMang/heap_3_nosuspend.o
+ .bss           0x0000000080075070        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/port.o
+ .bss           0x0000000080075070        0x0 build/support/syscalls.o
+ .bss           0x0000000080075070      0x720 build/support/freertos_support.o
+ .bss           0x0000000080075790        0x0 build/support/uart.o
+ .bss           0x0000000080075790        0x0 build/Cactus1.o
+ .bss           0x0000000080075790   0x168060 build/dinoGame.o
+                0x0000000080075790                cactuses
+                0x00000000800757cc                pteros
+ .bss           0x00000000801dd7f0        0x0 build/dinoSpriteCrouched1.o
+ .bss           0x00000000801dd7f0        0x0 build/dinoSpriteCrouched2.o
+ .bss           0x00000000801dd7f0        0x0 build/dinoSpriteDead.o
+ .bss           0x00000000801dd7f0        0x0 build/dinoSpriteMoving1.o
+ .bss           0x00000000801dd7f0        0x0 build/dinoSpriteMoving2.o
+ .bss           0x00000000801dd7f0        0x0 build/dinoSpriteStatic.o
+ .bss           0x00000000801dd7f0        0x0 build/font.o
+ .bss           0x00000000801dd7f0        0x0 build/Ptero1.o
+ .bss           0x00000000801dd7f0        0x0 build/Ptero2.o
+ .bss           0x00000000801dd7f0        0x0 build/sprite.o
+ .bss           0x00000000801dd7f0        0x0 build/minirisc/minirisc_init.o
+ .bss           0x00000000801dd7f0        0x0 build/FreeRTOS/portable/GCC/Mini-RISC/portASM.o
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clzsi2.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_umoddi3.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(adddf3.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(divdf3.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqdf2.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(gedf2.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(ledf2.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(muldf3.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subdf3.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unorddf2.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixdfsi.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsidf.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(_clz.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-atexit.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-exit.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-malloc.o)
+ .bss           0x00000000801dd7f0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
  .bss.__malloc_current_mallinfo
-                0x00000000801dd800       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
-                0x00000000801dd800                __malloc_current_mallinfo
- .bss           0x00000000801dd828        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
- .bss.__sf      0x00000000801dd828      0x138 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
-                0x00000000801dd828                __sf
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fwalk.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sprintf.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-stdio.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-time.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-closer.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reent.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gettimeofdayr.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-lseekr.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-readr.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sbrkr.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-writer.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-errno.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-init.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fini.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sysgetpid.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memset.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memcpy.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlen.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcpy.o)
- .bss           0x00000000801dd960        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__atexit.o)
+                0x00000000801dd7f0       0x28 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mallocr.o)
+                0x00000000801dd7f0                __malloc_current_mallinfo
+ .bss           0x00000000801dd818        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
+ .bss.__sf      0x00000000801dd818      0x138 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-findfp.o)
+                0x00000000801dd818                __sf
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fwalk.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sprintf.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-stdio.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-time.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-closer.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reent.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-impure.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gettimeofdayr.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-lseekr.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-readr.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sbrkr.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-writer.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-errno.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-init.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fini.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-sysgetpid.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memset.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memcpy.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlen.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcpy.o)
+ .bss           0x00000000801dd950        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__atexit.o)
  .bss.__atexit0
-                0x00000000801dd960      0x190 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__atexit.o)
-                0x00000000801dd960                __atexit0
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-freer.o)
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fclose.o)
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fflush.o)
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memchr.o)
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncpy.o)
- .bss           0x00000000801ddaf0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x00000000801dd950      0x190 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__atexit.o)
+                0x00000000801dd950                __atexit0
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-__call_atexit.o)
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-freer.o)
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfprintf.o)
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fclose.o)
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fflush.o)
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memchr.o)
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncpy.o)
+ .bss           0x00000000801ddae0        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
  .bss.saved_categories.0
-                0x00000000801ddaf0       0xe0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x00000000801ddae0       0xe0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
  .bss.new_categories.1
-                0x00000000801ddbd0       0xe0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+                0x00000000801ddbc0       0xe0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
  .bss.global_locale_string
-                0x00000000801ddcb0       0xe7 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-localeconv.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signalr.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcmp.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libm_a-frexpl.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-getenv_r.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-dmisc.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gmisc.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strtol.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wctomb_r.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcrtomb.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsrtombs.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-ctype_.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcasecmp.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcat.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strchr.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlcpy.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncasecmp.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncmp.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memmove-stub.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-assert.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-callocr.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-envlock.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reallocr.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsnrtombs.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fiprintf.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fvwrite.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wsetup.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fputwc.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-abort.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-makebuf.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wbuf.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signal.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fstatr.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-isattyr.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_getpid.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_kill.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqtf2.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(getf2.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(letf2.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(multf3.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subtf3.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unordtf2.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixtfsi.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsitf.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(extenddftf2.o)
- .bss           0x00000000801ddd97        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtend.o
+                0x00000000801ddca0       0xe7 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-locale.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-localeconv.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signalr.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcmp.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libm_a-frexpl.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-getenv_r.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-ldtoa.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gdtoa.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-dmisc.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-gdtoa-gmisc.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mbtowc_r.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-mprec.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strtol.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wctomb_r.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcrtomb.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsrtombs.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-ctype_.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-svfiprintf.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcasecmp.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strcat.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strchr.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strlcpy.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncasecmp.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-strncmp.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-memmove-stub.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-assert.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-callocr.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-environ.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-envlock.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-reallocr.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wcsnrtombs.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fiprintf.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-vfiprintf.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fvwrite.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wsetup.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fputwc.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-abort.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-makebuf.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-wbuf.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-signal.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-fstatr.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libc.a(libc_a-isattyr.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_getpid.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/../../../../riscv32-MINIRISC-elf/lib/libgloss.a(riscv_libgloss_a-sys_kill.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(eqtf2.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(getf2.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(letf2.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(multf3.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(subtf3.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(unordtf2.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(fixtfsi.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(floatsitf.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/libgcc.a(extenddftf2.o)
+ .bss           0x00000000801ddd87        0x0 /opt/gcc_MINIRISC/bin/../lib/gcc/riscv32-MINIRISC-elf/12.2.0/crtend.o
  *(COMMON)
-                0x00000000801ddd98                . = ALIGN ((. != 0x0)?0x4:0x1)
- *fill*         0x00000000801ddd97        0x1 
-                0x00000000801ddd98                . = ALIGN (0x4)
-                0x00000000801ddd98                . = SEGMENT_START ("ldata-segment", .)
-                0x00000000801ddd98                . = ALIGN (0x4)
-                0x00000000801ddd98                __BSS_END__ = .
-                0x0000000080075228                __global_pointer$ = MIN ((__SDATA_BEGIN__ + 0x800), MAX ((__DATA_BEGIN__ + 0x800), (__BSS_END__ - 0x800)))
-                0x00000000801ddd98                _end = .
+                0x00000000801ddd88                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x00000000801ddd87        0x1 
+                0x00000000801ddd88                . = ALIGN (0x4)
+                0x00000000801ddd88                . = SEGMENT_START ("ldata-segment", .)
+                0x00000000801ddd88                . = ALIGN (0x4)
+                0x00000000801ddd88                __BSS_END__ = .
+                0x0000000080075218                __global_pointer$ = MIN ((__SDATA_BEGIN__ + 0x800), MAX ((__DATA_BEGIN__ + 0x800), (__BSS_END__ - 0x800)))
+                0x00000000801ddd88                _end = .
                 [!provide]                        PROVIDE (end = .)
 
 .stab

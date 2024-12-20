@@ -357,7 +357,7 @@ void check_collisions(int score)
                                 cactuses[i].x, cactuses[i].y, cactusLength, cactusHeight))
             {
                 // Handle collision
-                xprintf("Collision with cactus at index \n");
+                xprintf("Collision with cactus\n");
                 game_over(score);
             }
         }
