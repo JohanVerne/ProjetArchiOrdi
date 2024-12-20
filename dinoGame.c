@@ -13,7 +13,20 @@
 #include "sprite.h"
 
 #define SCREEN_WIDTH 1024
-#define SCREEN_HEIGHT 480
+#define SCREEN_HEIGHT 360
+
+static unsigned int lcg_state = 1; // Seed (initial state)
+
+#define LCG_A 1664525
+#define LCG_C 1013904223
+#define LCG_M 4294967296 // 2^32
+
+// LCG random function
+unsigned int lcg_rand()
+{
+    lcg_state = (LCG_A * lcg_state + LCG_C) % LCG_M;
+    return lcg_state;
+}
 
 #define MAX_CACTUSES 5
 #define MAX_PTEROS 3
@@ -42,8 +55,8 @@ static SemaphoreHandle_t videoSem = NULL;
 static uint32_t frame_buffer[SCREEN_WIDTH * SCREEN_HEIGHT];
 
 static int velocity = 0; // initial vertical velocity is 0
-static int deltaVelocity = -60;
-static int gravity = 5;          // gravitational force
+static int deltaVelocity = -50;
+static int gravity = 30;         // gravitational force
 static int is_on_ground = 1;     // check if the dino is on the ground or not
 static int is_crouched = 0;      // check if the dino is crouched or not (double gravity and change sprite)
 static int dinoSpriteNumber = 1; // select correct dino Sprite number depending on is_crouched
@@ -93,8 +106,8 @@ void init_variables()
     // Initialize pterodactyls
     for (int i = 0; i < MAX_PTEROS; i++)
     {
-        pteros[i].x = -1;                  // Start offscreen
-        pteros[i].y = SCREEN_HEIGHT - 200; // Approximate height for flying
+        pteros[i].x = -1; // Start offscreen
+        pteros[i].y = SCREEN_HEIGHT - (100 + lcg_rand() % (300 - 100 + 1));
         pteros[i].isActive = 0;
     }
 }
@@ -162,8 +175,6 @@ void printScreen()
 
         spawn_obstacles(frameCounter);
         move_obstacles();
-        check_collisions();
-
         memset(frame_buffer, 0, sizeof(frame_buffer)); // clear
 
         if (!is_on_ground)
@@ -220,6 +231,7 @@ void printScreen()
                 }
             }
         }
+        check_collisions(frameCounter / spriteUpdate);
     }
 }
 
@@ -268,7 +280,7 @@ void spawn_obstacles(int frameCounter)
     // Spawn cactuses
     for (int i = 0; i < MAX_CACTUSES; i++)
     {
-        if (!cactuses[i].isActive && frameCounter % (100 + rand() % (250 - 100 + 1)) == 0)
+        if (!cactuses[i].isActive && frameCounter % (50 + lcg_rand() % (500 - 50 + 1)) == 0)
         {
             cactuses[i].x = SCREEN_WIDTH; // Spawn at the right edge
             cactuses[i].isActive = 1;
@@ -279,7 +291,7 @@ void spawn_obstacles(int frameCounter)
     // Spawn pterodactyls
     for (int i = 0; i < MAX_PTEROS; i++)
     {
-        if (!pteros[i].isActive && frameCounter % (200 + rand() % (500 - 200 + 1)) == 0)
+        if (!pteros[i].isActive && frameCounter % (100 + lcg_rand() % (700 - 100 + 1)) == 0)
         {
             pteros[i].x = SCREEN_WIDTH;
             pteros[i].isActive = 1;
@@ -290,12 +302,16 @@ void spawn_obstacles(int frameCounter)
 
 void move_obstacles()
 {
+    int cactusMin = 15;
+    int cactusMax = 25;
+    int pteroMin = 20;
+    int pteroMax = 35;
     // Move cactuses
     for (int i = 0; i < MAX_CACTUSES; i++)
     {
         if (cactuses[i].isActive)
         {
-            cactuses[i].x -= 8 + rand() % (12 - 8 + 1); // Move left
+            cactuses[i].x -= cactusMin + lcg_rand() % (cactusMax - cactusMin + 1); // Move left
             if (cactuses[i].x + cactusLength < 0)
             { // Offscreen
                 cactuses[i].isActive = 0;
@@ -308,7 +324,7 @@ void move_obstacles()
     {
         if (pteros[i].isActive)
         {
-            pteros[i].x -= 10 + rand() % (20 - 10 + 1); // Move faster than cactuses
+            pteros[i].x -= pteroMin + lcg_rand() % (pteroMax - pteroMin + 1); // Move faster than cactuses
             if (pteros[i].x + PteroLength < 0)
             { // Offscreen
                 pteros[i].isActive = 0;
@@ -326,7 +342,7 @@ int check_collision(int x1, int y1, int width1, int height1,
              y1 > y2 + height2);  // Dino's top edge is below cactus
 }
 
-void check_collisions()
+void check_collisions(int score)
 {
     // Dino's bounding box
     int dinoXLeft = dinoX;
@@ -341,8 +357,8 @@ void check_collisions()
                                 cactuses[i].x, cactuses[i].y, cactusLength, cactusHeight))
             {
                 // Handle collision
-                xprintf("Collision with cactus at index %d!\n", i);
-                game_over();
+                xprintf("Collision with cactus at index \n");
+                game_over(score);
             }
         }
     }
@@ -356,22 +372,24 @@ void check_collisions()
                                 pteros[i].x, pteros[i].y, PteroLength, PteroHeight))
             {
                 // Handle collision
-                xprintf("Collision with pterodactyl at index %d!\n", i);
-                game_over();
+                xprintf("Collision with pterodactyl \n");
+                game_over(score);
             }
         }
     }
 }
 
-void game_over()
+void game_over(int score)
 {
     xprintf("Game Over!\n");
+    xprintf("Final Score: %d\n", score);
     minirisc_halt(); // Halt the system or reset the game state
 }
 
 int main()
 {
-    srand(time(NULL));
+    lcg_state = (unsigned int)time(NULL) ^ getpid(); // initialise random seed
+
     init_variables();
     init_uart();
     init_video();
