@@ -14,7 +14,9 @@ Le but du jeu est de parcourir la plus grande distance possible avec son dinosau
 
 Téléchargez le dépôt git sur votre machine, rendez-vous dans le dossier téléchargé et exécutez $make afin de compiler le projet ou $make exec afin de l'exécuter.
 
-Contrôles : - Z ou flèche du haut pour sauter.
+Contrôles :
+
+            - Z ou flèche du haut pour sauter.
 
             - S ou flèche du bas pour se baisser.
 
